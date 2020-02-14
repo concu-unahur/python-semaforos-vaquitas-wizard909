@@ -17,7 +17,7 @@ class Vaca(threading.Thread):
     self.posicion += 1
 
   def dibujar(self):
-    print(' ' * self.posicion + "🐮")
+    print(' ' * self.posicion + "v")
 
   def run(self):
     while(True):
@@ -35,9 +35,10 @@ def cls():
 def dibujarPuente():
   print(' ' * inicioPuente + '=' * largoPuente)
 
+
 while(True):
   cls()
-  print('Apretá Ctrl + C varias veces para salir...')
+  print('Apreta Ctrl + C varias veces para salir...')
   print()
   dibujarPuente()
   for v in vacas:
